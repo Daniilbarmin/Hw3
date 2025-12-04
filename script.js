@@ -96,7 +96,7 @@ function renderTodos() {
 
     const deleteBtn = document.createElement("button");
     deleteBtn.classList.add("delete-btn");
-    deleteBtn.innerHTML = '<i class="far fa-times"></i>';
+    deleteBtn.innerHTML = '<i class="far fa-times" aria-hidden="true"></i>';
     deleteBtn.addEventListener("click", () => deleteTodo(todo.id));
 
     todoItem.appendChild(checkboxContainer);
@@ -174,3 +174,4 @@ window.addEventListener("DOMContentLoaded", () => {
   updateItemsCount();
   setDate();
 });
+
